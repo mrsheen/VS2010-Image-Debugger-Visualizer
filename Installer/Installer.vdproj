@@ -82,7 +82,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\VS2008DebuggerVisualizers.msi"
+        "OutputFilename" = "8:Release\\VS2010DebuggerVisualizers.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -134,7 +134,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.21022"
+                "FrameworkVersion" = "8:3.5.21022 "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -263,7 +263,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:VS2010 Image Debugger Visualizers"
         "ProductCode" = "8:{64BA3A0E-3970-4037-B43E-161C615D2DC1}"
-        "PackageCode" = "8:{04EAA815-5049-458D-AA58-24F0A8B9B07C}"
+        "PackageCode" = "8:{68764007-29C6-4E30-A062-7D4B95B1291B}"
         "UpgradeCode" = "8:{7244846F-197F-4CF1-8D71-0BD76D158F07}"
         "AspNetVersion" = "8:4.0.21006.0"
         "RestartWWWService" = "11:FALSE"
