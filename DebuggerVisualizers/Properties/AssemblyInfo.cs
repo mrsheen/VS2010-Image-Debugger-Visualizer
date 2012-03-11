@@ -16,6 +16,6 @@ using DebuggerVisualizers.ImageVisualizer;
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: Guid("82a53cde-ae84-4722-96e2-1973f6abcc56")]
-[assembly: AssemblyVersion("1.0.0.*")]
-[assembly: AssemblyFileVersion("1.0.0.*")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("1.0.1.0")]
 [assembly: DebuggerVisualizer(typeof(ImageVisualizer), Target = typeof(Image), Description = "Image Debugger Visualizer")]
