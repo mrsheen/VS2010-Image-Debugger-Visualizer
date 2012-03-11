@@ -8,6 +8,12 @@ namespace DebuggerVisualizers.ImageVisualizer
         public FrmImage()
         {
             InitializeComponent();
+
+
+
+            // Shift-Ctrl-Alt Escape will exit the play loop
+            WIN32.RegisterHotKey(Handle, 100, WIN32.KeyModifiers.None, Keys.Escape);
+
         }
 
         public Image Picture 
@@ -30,6 +36,24 @@ namespace DebuggerVisualizers.ImageVisualizer
             //get image type
             lblImageTypeInfo.Text = image.GetType().Name;
         }
+
+
+        // Set up hotkeys: we need one to be able to quit the loop because 
+        // while the bot is running the mouse is hijacked
+        protected override void WndProc(ref Message m)
+        {
+            const int WM_HOTKEY = 0x0312;
+
+            switch (m.Msg)
+            {
+                case WM_HOTKEY:
+                    Close();
+                    break;
+            }
+
+            base.WndProc(ref m);
+        }
+
 
     }
 }
