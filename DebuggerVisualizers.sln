@@ -10,24 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugger", "Debugger\Debugger.csproj", "{6E98C82C-6929-4459-B933-ECCCD669BE74}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs09.codeplex.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Debugger\\Debugger.csproj
-		SccProjectName1 = Debugger
-		SccLocalPath1 = Debugger
-		SccProjectUniqueName2 = DebuggerVisualizers\\DebuggerVisualizers.csproj
-		SccProjectName2 = DebuggerVisualizers
-		SccLocalPath2 = DebuggerVisualizers
-		SccProjectUniqueName3 = Installer\\Installer.vdproj
-		SccProjectName3 = Installer
-		SccLocalPath3 = Installer
-		SccProjectUniqueName4 = Tester\\Tester.csproj
-		SccProjectName4 = Tester
-		SccLocalPath4 = Tester
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
