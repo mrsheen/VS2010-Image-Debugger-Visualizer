@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Xml;
 using Tester.Properties;
+using DebuggerVisualizers.ImageVisualizer;
 
 namespace Tester
 {
@@ -13,14 +14,16 @@ namespace Tester
             var textReader = new XmlTextReader(new System.IO.StringReader(Resources.Example));
 
             xmlDoc.Load(textReader);
-            Debugger.Break();   //look at the xmlDoc and use the visualizer (magnifying glass)
+            
+            //Debugger.Break();   //look at the xmlDoc and use the visualizer (magnifying glass)
 
 
             var img = Resources.logo_baseline;
-            Debugger.Break();   //look at the img variable and use the visualizer (magnifying glass)
+            ImageVisualizer.TestShowVisualizer(img);
+            //Debugger.Break();   //look at the img variable and use the visualizer (magnifying glass)
 
-            Console.WriteLine("Image with resolution '" + img.Width + "x" + img.Height + "' loaded...");
-            Console.ReadLine();
+            //Console.WriteLine("Image with resolution '" + img.Width + "x" + img.Height + "' loaded...");
+            //Console.ReadLine();
         }
     }
 }
