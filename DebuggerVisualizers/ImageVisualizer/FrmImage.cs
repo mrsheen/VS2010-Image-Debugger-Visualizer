@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
+using System;
 
 namespace DebuggerVisualizers.ImageVisualizer
 {
@@ -52,6 +53,23 @@ namespace DebuggerVisualizers.ImageVisualizer
             }
 
             base.WndProc(ref m);
+        }
+
+        private void btnSave_Click(object sender, System.EventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Bitmap files(*.BMP)|*.BMP";
+            //dialog.InitialDirectory = System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase;
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                try
+                {
+                    Picture.Save(dialog.FileName);
+                }
+                catch (Exception)
+                {
+                }
+            }
         }
 
 

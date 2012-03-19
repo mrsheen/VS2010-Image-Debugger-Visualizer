@@ -6,18 +6,12 @@ using DebuggerVisualizers.ImageVisualizer;
 
 namespace Tester
 {
+
     class Program
     {
+        [STAThread]
         static void Main()
         {
-            var xmlDoc = new XmlDocument();
-            var textReader = new XmlTextReader(new System.IO.StringReader(Resources.Example));
-
-            xmlDoc.Load(textReader);
-            
-            //Debugger.Break();   //look at the xmlDoc and use the visualizer (magnifying glass)
-
-
             var img = Resources.logo_baseline;
             ImageVisualizer.TestShowVisualizer(img);
             //Debugger.Break();   //look at the img variable and use the visualizer (magnifying glass)

@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.pnlInfo = new System.Windows.Forms.Panel();
+            this.lblImageTypeInfo = new System.Windows.Forms.Label();
+            this.lblImageType = new System.Windows.Forms.Label();
             this.lblNativeResolutionInfo = new System.Windows.Forms.Label();
             this.lblNativeResolution = new System.Windows.Forms.Label();
             this.PicViewer = new System.Windows.Forms.PictureBox();
-            this.lblImageTypeInfo = new System.Windows.Forms.Label();
-            this.lblImageType = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             this.pnlInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicViewer)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +43,7 @@
             // 
             this.pnlInfo.BackColor = System.Drawing.SystemColors.Window;
             this.pnlInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlInfo.Controls.Add(this.btnSave);
             this.pnlInfo.Controls.Add(this.lblImageTypeInfo);
             this.pnlInfo.Controls.Add(this.lblImageType);
             this.pnlInfo.Controls.Add(this.lblNativeResolutionInfo);
@@ -51,6 +53,23 @@
             this.pnlInfo.Name = "pnlInfo";
             this.pnlInfo.Size = new System.Drawing.Size(342, 50);
             this.pnlInfo.TabIndex = 1;
+            // 
+            // lblImageTypeInfo
+            // 
+            this.lblImageTypeInfo.AutoSize = true;
+            this.lblImageTypeInfo.Location = new System.Drawing.Point(81, 26);
+            this.lblImageTypeInfo.Name = "lblImageTypeInfo";
+            this.lblImageTypeInfo.Size = new System.Drawing.Size(0, 13);
+            this.lblImageTypeInfo.TabIndex = 3;
+            // 
+            // lblImageType
+            // 
+            this.lblImageType.AutoSize = true;
+            this.lblImageType.Location = new System.Drawing.Point(10, 26);
+            this.lblImageType.Name = "lblImageType";
+            this.lblImageType.Size = new System.Drawing.Size(65, 13);
+            this.lblImageType.TabIndex = 2;
+            this.lblImageType.Text = "Type image:";
             // 
             // lblNativeResolutionInfo
             // 
@@ -79,22 +98,15 @@
             this.PicViewer.TabIndex = 0;
             this.PicViewer.TabStop = false;
             // 
-            // lblImageTypeInfo
+            // btnSave
             // 
-            this.lblImageTypeInfo.AutoSize = true;
-            this.lblImageTypeInfo.Location = new System.Drawing.Point(81, 26);
-            this.lblImageTypeInfo.Name = "lblImageTypeInfo";
-            this.lblImageTypeInfo.Size = new System.Drawing.Size(0, 13);
-            this.lblImageTypeInfo.TabIndex = 3;
-            // 
-            // lblImageType
-            // 
-            this.lblImageType.AutoSize = true;
-            this.lblImageType.Location = new System.Drawing.Point(10, 26);
-            this.lblImageType.Name = "lblImageType";
-            this.lblImageType.Size = new System.Drawing.Size(65, 13);
-            this.lblImageType.TabIndex = 2;
-            this.lblImageType.Text = "Type image:";
+            this.btnSave.Location = new System.Drawing.Point(253, 13);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FrmImage
             // 
@@ -121,5 +133,6 @@
         private System.Windows.Forms.Label lblImageTypeInfo;
         private System.Windows.Forms.Label lblImageType;
         private System.Windows.Forms.PictureBox PicViewer;
+        private System.Windows.Forms.Button btnSave;
     }
 }
